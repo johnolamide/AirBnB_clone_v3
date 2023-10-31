@@ -2,6 +2,7 @@
 """
 place review view api
 """
+
 from api.v1.views import app_views
 from flask import Flask, jsonify, request, abort
 from models import storage
@@ -61,7 +62,7 @@ def create_review(place_id):
     place = storage.get(Place, place_id)
     if not place:
         abort(404)
-    if not request.get_json()
+    if not request.get_json():
         abort(400, "Not a JSON")
 
     data = request.get_json()
