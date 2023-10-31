@@ -77,7 +77,8 @@ def create_review(place_id):
         abort(400, "Missing text")
 
     review = Review(**data)
-    review.save()
+    storage(review)
+    storage.save()
     response = review.to_dict()
     return jsonify(response), 201
 
@@ -101,6 +102,6 @@ def update_review(review_id):
     for attribute, value in data.items():
         if attribute not in ignore_attributes:
             setattr(review, attribute, value)
-    review.save()
+    storage.save()
     response = review.to_dict()
     return jsonify(response), 200

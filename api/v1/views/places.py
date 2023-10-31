@@ -76,7 +76,8 @@ def create_place(city_id):
     if 'name' not in data:
         abort(400, "Missing name")
     place = Place(**data)
-    place.save()
+    storage.new(place)
+    storage.save()
     response = place.to_dict()
     return jsonify(response), 201
 
@@ -100,7 +101,7 @@ def update_place(place_id):
     for attribute, value in data.items():
         if attribute not in ignore_attributes:
             setattr(place, attribute, value)
-    place.save()
+    storage.save()
     response = place.to_dict()
     return jsonify(response), 200
 
