@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Flask app that handle the places Route
+"""
 from api.v1.views import app_views
 from flask import jsonify, request, abort
 from models import storage

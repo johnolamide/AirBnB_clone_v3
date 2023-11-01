@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Flask app that handles the cities routes
+"""
 from api.v1.views import app_views
 from flask import Flask, jsonify, request, abort
 from models import storage

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Flask App that integrate the endpoint
+"""
 from api.v1.views import app_views
 from flask import Flask, jsonify
 from flask_cors import CORS

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Flask route that handles the states route
+"""
 from api.v1.views import app_views
 from flask import Flask, jsonify, request, abort
 from models import storage

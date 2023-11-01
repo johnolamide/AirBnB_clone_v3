@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Flask app that handles the index page route
+"""
 from api.v1.views import app_views
 from flask import jsonify, request
 from models import storage
