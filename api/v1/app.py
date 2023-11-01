@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
+<<<<<<< HEAD
 this script contains the code for the api app
+=======
+Flask App that integrate the endpoint
+>>>>>>> 9acb4c9 (updating for corrections)
 """
 from api.v1.views import app_views
 from flask import Flask, jsonify

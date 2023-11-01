@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 """
+<<<<<<< HEAD
 this script handles the api views
 """
 
+=======
+Flask app that handles the index page route
+"""
+>>>>>>> 9acb4c9 (updating for corrections)
 from api.v1.views import app_views
 from flask import jsonify, request
 from models import storage
