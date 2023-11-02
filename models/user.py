@@ -30,7 +30,6 @@ class User(BaseModel, Base):
         """initializes user"""
         super().__init__(*args, **kwargs)
 
-
     def update_password(self, pwd):
         """
         that takes a password (pwd) as a parameter and encrypts
