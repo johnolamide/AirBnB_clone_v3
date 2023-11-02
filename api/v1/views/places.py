@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 """
-<<<<<<< HEAD
-places view api
-=======
 Flask app that handle the places Route
->>>>>>> 9acb4c9 (updating for corrections)
 """
 from api.v1.views import app_views
 from flask import jsonify, request, abort
