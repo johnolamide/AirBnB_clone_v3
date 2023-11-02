@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
+<<<<<<< HEAD
 Flask route that handles the states route
+=======
+state views api
+>>>>>>> refs/remotes/origin/master
 """
 from api.v1.views import app_views
 from flask import Flask, jsonify, request, abort

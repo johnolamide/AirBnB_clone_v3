@@ -1,7 +1,13 @@
 #!/usr/bin/python3
 """
+<<<<<<< HEAD
 Flask app that handles the index page route
 """
+=======
+this script handles the api views
+"""
+
+>>>>>>> refs/remotes/origin/master
 from api.v1.views import app_views
 from flask import jsonify, request
 from models import storage

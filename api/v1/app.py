@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
+<<<<<<< HEAD
 Flask App that integrate the endpoint
+=======
+this script contains the code for the api app
+>>>>>>> refs/remotes/origin/master
 """
 from api.v1.views import app_views
 from flask import Flask, jsonify
@@ -28,6 +32,9 @@ def teardown(self):
 
 @app.errorhandler(404)
 def not_found(error):
+    """
+    this method handles 404 error
+    """
     response = {"error": "Not found"}
     return jsonify(response), 404
 

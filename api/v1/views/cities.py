@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
+<<<<<<< HEAD
 Flask app that handles the cities routes
+=======
+cities view api
+>>>>>>> refs/remotes/origin/master
 """
 from api.v1.views import app_views
 from flask import Flask, jsonify, request, abort
